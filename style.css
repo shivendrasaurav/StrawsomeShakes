@@ -1,0 +1,15 @@
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: -1.5px;
+    border: 5px solid #000;
+}
+
+.ques_box{
+    margin-top: 10px;
+}
+.ques_box .ques{
+    color: #1e1e1e;
+    font-weight: bold;
+}
