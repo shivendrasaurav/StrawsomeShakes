@@ -1,12 +1,24 @@
 body{
-    background: linear-gradient(150deg, #DDE7F3,  #E5F0F9);
+    background: linear-gradient(45deg, #1e1e1e 60%,  #3e3e3e 100%);
+}
+li:nth-child(odd){
+    color: #DDD;
+    background: #2E2E2E;
+}
+li:nth-child(even){
+    color: #EEE;
+    background: #5E5E5E;
+}
+*{
+    color: #ddd;
 }
 
 .skeu{
-    box-shadow: 2px 2px 4px #4e4e4e, 
-                -4px -4px 6px #ffffff;
+    box-shadow: 2px 2px 8px #000, -2px -2px 8px #444;
 }
-
+select{
+    background: #1e1e1e;
+}
 .skeuinv:focus{
     box-shadow: 2px 2px 6px #2e2e2e inset, 
                 -6px -6px 6px #ffffff inset;
@@ -14,15 +26,16 @@ body{
 
 input[type='text'], textarea.skeu, span.skeu{
     background: transparent;
-    box-shadow: 2px 2px 4px #4e4e4e, -2px -2px 3px #fff;
+    box-shadow: 2px 2px 8px #000, -2px -2px 8px #444;
     min-height: 44px;
-    transition: 400ms;
+    transition: 1s;
+    color: #ddd;
 }
 input[type='text']:focus, textarea.skeu:focus, span.skeu:hover{
     background: transparent;
-    box-shadow: 3px 3px 6px #4e4e4e, -3px -3px 6px #fff;
+    box-shadow: 2px 2px 8px #000, -2px -2px 8px #444;
     min-height: 44px;
-    transition: 400ms;
+    transition: 1s;
 }
 .searchbox button{
     min-height: 44px;
@@ -40,6 +53,6 @@ input[type=checkbox]{
     margin-top: 10px;
 }
 .ques_box .ques{
-    color: #1e1e1e;
+    color: #ccc;
     font-weight: bold;
 }
