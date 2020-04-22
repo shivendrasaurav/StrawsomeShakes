@@ -1,3 +1,33 @@
+body{
+    background: linear-gradient(150deg, #DDE7F3,  #E5F0F9);
+}
+
+.skeu{
+    box-shadow: 2px 2px 4px #4e4e4e, 
+                -4px -4px 6px #ffffff;
+}
+
+.skeuinv:focus{
+    box-shadow: 2px 2px 6px #2e2e2e inset, 
+                -6px -6px 6px #ffffff inset;
+}
+
+input[type='text'], textarea.skeu, span.skeu{
+    background: transparent;
+    box-shadow: 2px 2px 4px #4e4e4e, -2px -2px 3px #fff;
+    min-height: 44px;
+    transition: 400ms;
+}
+input[type='text']:focus, textarea.skeu:focus, span.skeu:hover{
+    background: transparent;
+    box-shadow: 3px 3px 6px #4e4e4e, -3px -3px 6px #fff;
+    min-height: 44px;
+    transition: 400ms;
+}
+.searchbox button{
+    min-height: 44px;
+}
+
 input[type=checkbox]{
     width: 20px;
     height: 20px;
