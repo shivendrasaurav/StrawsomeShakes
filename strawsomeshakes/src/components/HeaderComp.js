@@ -9,9 +9,9 @@ class Header extends Component{
         var status="Open Now";
         var hours = new Date().getHours();
         if(hours>=10 && hours<=20)
-            status = <button class='large primary_green right'>Open Now</button>;
+            status = <button class='large primary_green right zi2'>Open Now</button>;
         else
-            status = <button class='large primary_red right'>Sorry, We're Closed</button>;
+            status = <button class='large primary_red right zi2'>Sorry, We're Closed</button>;
         return status;
     }
 
