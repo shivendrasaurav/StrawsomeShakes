@@ -4,7 +4,7 @@ import './App.css';
 import Home from './components/HomeComp'
 import FAQ from './components/FAQComp'
 import Contact from './components/ContactComp'
-
+import Menu from './components/MenuComp'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Route path="/home" component={Home} />
       <Route path="/faq" component={FAQ} />
       <Route path="/contact" component={Contact} />
+      <Route path="/menu" component={Menu} />
     </HashRouter>
   );
 }
