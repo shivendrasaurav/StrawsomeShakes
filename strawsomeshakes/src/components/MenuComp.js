@@ -7,24 +7,34 @@ import beverages from './menu/beverages'
 import burgers from './menu/burgers'
 import sandwiches from './menu/sandwiches'
 import milkshakes from './menu/milkshakes'
+import cartItems from './cart/CartItems.js'
+import cartPrices from './cart/CartItems.js'
+var total = 0;
+var i=0;
 
 class Menu extends Component{
 
     constructor(props){
         super(props);
 
-        this.total = Number(0);
-
+        this.newval = 0;
     }
 
-    newcartitem = (price) => {
-        this.total = Number(price) + Number(this.total);
+    newcartitem(price, item){
+        total = parseInt(price) + total;
+        cartItems.push(item);
+        cartPrices.push(price);
+        console.log(total);
+        console.log(cartItems);
+        console.log(cartPrices);
+//        document.getElementById("cartitems").innerHTML = {cartPrices: 0};
+        this.renderCart();
     }
 
     renderItems(item){
         const name = [];
             name.push(
-            <li key={item.id} class="column large12 medium12 small12" onClick={()=>this.newcartitem(item.price)}>
+            <li key={item.id} class="column large12 medium12 small12" onClick={() => this.newcartitem(item.price, item.name)}>
                 <button class="right primary_blue padmar">Add to Cart</button>
                 <span class="right">{item.price}</span>
                 <span>{item.name}</span>
@@ -35,21 +45,15 @@ class Menu extends Component{
         );
     }
 
-    addtocart(item){
-        if(item!=null){
-            return(
-                <li>              
-                    <span class="right">{"Rs. " + item.price}</span>
-                    <span>{item.name}</span>
-                </li>   
-            );
-        }
-        else{
-            return(
-                <h1>Cart is Empty</h1>
-            );
-        }
+    renderCart(){
+        document.getElementById("cartitem").innerHTML = cartItems[i];
+        document.getElementById("cartitem").id = "cartitem" + i;
+        var a = document.createElement("li");
+        a.id = "cartitem";
+        document.getElementById("cart").appendChild(a);
+        i++;
     }
+
 
     render(){
 
@@ -85,6 +89,9 @@ class Menu extends Component{
             );
         });
 
+        const cartItemsRender = cartItems;
+
+
         return(
             <div>
                 <Topnav></Topnav>
@@ -107,7 +114,9 @@ class Menu extends Component{
                     </div>
                     <div class="column large6 medium6 small12 right">
                         <h3>Cart</h3><br /><br />
-                            <ul>{this.total}</ul>                      
+                            <ul id="cart">
+                                <li id="cartitem"></li>
+                            </ul>
                     </div>
                 </div>
                 
