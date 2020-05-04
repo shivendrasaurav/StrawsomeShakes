@@ -10,7 +10,7 @@ import Timer from './StatusComp'
 class Home extends Component{
 
     checkStatus(){
-        if(document.referrer == "http://localhost:3000/"){
+        if(document.referrer === "http://localhost:3000/"){
             return(
                 <span>Time remaining for your order to be delivered
                 <span class="ta_xl"><Timer /></span>
