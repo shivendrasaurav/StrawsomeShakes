@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
 import '../App.css';
 import Topnav from './TopnavComp'
 import Footer from './FooterComp'
@@ -8,7 +7,7 @@ import burgers from './menu/burgers'
 import sandwiches from './menu/sandwiches'
 import milkshakes from './menu/milkshakes'
 import cartItems from './cart/CartItems.js'
-import cartPrices from './cart/CartItems.js'
+import cartPrices from './cart/CartPrices.js'
 var total = 0;
 var i=0;
 
@@ -24,10 +23,6 @@ class Menu extends Component{
         total = parseInt(price) + total;
         cartItems.push(item);
         cartPrices.push(price);
-        console.log(total);
-        console.log(cartItems);
-        console.log(cartPrices);
-//        document.getElementById("cartitems").innerHTML = {cartPrices: 0};
         this.renderCart();
     }
 
@@ -46,11 +41,29 @@ class Menu extends Component{
     }
 
     renderCart(){
-        document.getElementById("cartitem").innerHTML = cartItems[i];
-        document.getElementById("cartitem").id = "cartitem" + i;
-        var a = document.createElement("li");
-        a.id = "cartitem";
-        document.getElementById("cart").appendChild(a);
+        var d = document.getElementById("cart");
+        var c = document.createElement("li");
+        c.id = "cartitem";
+        c.classList = "rot";
+        d.appendChild(c);
+    
+        document.getElementById("itemname").innerHTML = cartItems[i];
+        document.getElementById("itemname").id = "item" + i;
+        var a = document.createElement("span");
+        a.id = "itemname";
+        c.appendChild(a);
+
+        document.getElementById("itemprice").innerHTML = "Rs. " + cartPrices[i];
+        document.getElementById("itemprice").id = "itemprice" + i;
+        var b = document.createElement("span");
+        b.id = "itemprice";
+        b.classList = "right"
+        c.appendChild(b);
+
+        c.id = "cartitem" + i;
+
+        document.getElementById("total").innerHTML = total;
+
         i++;
     }
 
@@ -112,11 +125,25 @@ class Menu extends Component{
                             {bev}
 
                     </div>
-                    <div class="column large6 medium6 small12 right">
+                    <div class="column large6 medium6 small12 right float">
                         <h3>Cart</h3><br /><br />
-                            <ul id="cart">
-                                <li id="cartitem"></li>
-                            </ul>
+                        <ul id="cart" class="cart">
+                            <li id="cartitem" class="rot">
+                                <span id="itemname">Items added to Cart will be displayed here</span>
+                                <span id="itemprice" class="right">Item price will be displayed here</span>
+                            </li>
+                        </ul>
+                        <h6 class="center primary_blue padmar">
+                            <span>Total (In Rupees) :</span>
+                            <span class="right" id="total">0</span>
+                        </h6>
+                        <br></br>
+                        <button class="large right primary_green frost_container">
+                            <span class="frost">Proceed</span>
+                        </button>
+                        <br></br><br></br><br></br>
+                        <p>We only support Pay on Delivery as of now, we will add a payment gateway soon</p>
+
                     </div>
                 </div>
                 
