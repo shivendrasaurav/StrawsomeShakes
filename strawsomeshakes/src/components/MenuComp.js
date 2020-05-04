@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {NavLink} from 'react-router-dom'
 import '../App.css';
 import Topnav from './TopnavComp'
 import Footer from './FooterComp'
@@ -6,8 +7,10 @@ import beverages from './menu/beverages'
 import burgers from './menu/burgers'
 import sandwiches from './menu/sandwiches'
 import milkshakes from './menu/milkshakes'
-import cartItems from './cart/CartItems.js'
-import cartPrices from './cart/CartPrices.js'
+import cartItems from './cart/CartItems'
+import cartPrices from './cart/CartPrices'
+
+
 var total = 0;
 var i=0;
 
@@ -138,11 +141,9 @@ class Menu extends Component{
                             <span class="right" id="total">0</span>
                         </h6>
                         <br></br>
-                        <button class="large right primary_green frost_container">
-                            <span class="frost">Proceed</span>
-                        </button>
+                        <NavLink to="/status" class="button right">Order Now</NavLink>
                         <br></br><br></br><br></br>
-                        <p>We only support Pay on Delivery as of now, we will add a payment gateway soon</p>
+                        <p>We only support <strong>Pay on Delivery</strong> as of now, we will add other payment options soon</p>
 
                     </div>
                 </div>

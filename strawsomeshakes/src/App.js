@@ -5,6 +5,7 @@ import Home from './components/HomeComp'
 import FAQ from './components/FAQComp'
 import Contact from './components/ContactComp'
 import Menu from './components/MenuComp'
+import Order from './components/OrderComp'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/faq" component={FAQ} />
       <Route path="/contact" component={Contact} />
       <Route path="/menu" component={Menu} />
+      <Route path="/status" component={Order} />
     </HashRouter>
   );
 }
