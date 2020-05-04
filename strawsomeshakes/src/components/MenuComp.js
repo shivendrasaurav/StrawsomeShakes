@@ -10,24 +10,21 @@ import milkshakes from './menu/milkshakes'
 
 class Menu extends Component{
 
-    constructor(props) {
+    constructor(props){
         super(props);
 
-        this.state = [
-            {   
-                key: null
-            }
-        ]
+        this.total = Number(0);
+
     }
-        
-    newcartitem(item){
-        this.setState({key: item});
+
+    newcartitem = (price) => {
+        this.total = Number(price) + Number(this.total);
     }
 
     renderItems(item){
         const name = [];
             name.push(
-            <li key={item.id} class="column large12 medium12 small12" onClick={()=>this.newcartitem(item)}>
+            <li key={item.id} class="column large12 medium12 small12" onClick={()=>this.newcartitem(item.price)}>
                 <button class="right primary_blue padmar">Add to Cart</button>
                 <span class="right">{item.price}</span>
                 <span>{item.name}</span>
@@ -110,7 +107,7 @@ class Menu extends Component{
                     </div>
                     <div class="column large6 medium6 small12 right">
                         <h3>Cart</h3><br /><br />
-                            <ul>{this.addtocart(this.state.key)}</ul>                        
+                            <ul>{this.total}</ul>                      
                     </div>
                 </div>
                 

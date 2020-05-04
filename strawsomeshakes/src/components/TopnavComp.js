@@ -8,7 +8,7 @@ class Topnav extends Component{
         return(
             <div class='column large12 pivot_container primary_red sticky-top'>
                 <NavLink to="/home" class="pivot_button left">Strawsome Shakes</NavLink>
-                 <NavLink to="/faq" class="pivot_button right">FAQs</NavLink>
+                <NavLink to="/faq" class="pivot_button right">FAQs</NavLink>
                 <NavLink to="/contact" class="pivot_button right">Contact</NavLink>
                 <NavLink to="/menu" class="pivot_button right">Menu</NavLink>
                 <NavLink to="/home" class="pivot_button right">Home</NavLink>
