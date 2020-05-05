@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c9c4de05d88cfae0f7c82d8798751c81",
+    "revision": "7a7fb1f93a76056deba8f23c1766da3c",
     "url": "/StrawsomeShakes/index.html"
   },
   {
-    "revision": "d447b8d87204277d2f9d",
-    "url": "/StrawsomeShakes/static/css/main.6fab5358.chunk.css"
+    "revision": "07435840ec6cea7e185f",
+    "url": "/StrawsomeShakes/static/css/main.4ea895a1.chunk.css"
   },
   {
-    "revision": "bbbf3826355dac044728",
-    "url": "/StrawsomeShakes/static/js/2.a7e09ec6.chunk.js"
+    "revision": "d68a89db9c6a9eaa8bf0",
+    "url": "/StrawsomeShakes/static/js/2.046f5f36.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/StrawsomeShakes/static/js/2.a7e09ec6.chunk.js.LICENSE.txt"
+    "url": "/StrawsomeShakes/static/js/2.046f5f36.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d447b8d87204277d2f9d",
-    "url": "/StrawsomeShakes/static/js/main.aa593db5.chunk.js"
+    "revision": "07435840ec6cea7e185f",
+    "url": "/StrawsomeShakes/static/js/main.fcdb4917.chunk.js"
   },
   {
     "revision": "e68fa9996350e662ed17",
