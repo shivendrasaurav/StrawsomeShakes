@@ -7,7 +7,7 @@ class Contact extends Component{
     render(){
         return(
 
-            <form class="large8 medium8 small12 center" action="http://localhost:3000/#/status">
+            <form class="large8 medium8 small12 center" action="https:/shivendrasaurav.github.io/StrawsomeShakes/status">
                 <br></br>
                 <h5>Enter your Address</h5><br></br><br></br>
                 <input type="text" required /><br></br>
