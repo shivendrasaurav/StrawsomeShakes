@@ -17,7 +17,7 @@ class Searchbox extends Component{
         <div>
             <span class="column large12 medium12 small12 search_box skeu" tabindex="1234">
                 <button><i class="ms-Icon ms-Icon--Search" aria-hidden="true"></i></button>
-                <input id="search" type="text" placeholder="Enter your pincode to check if we deliver in your area" class='transparent' onKeyUp={() => this.deliver()} />
+                <input id="search" type="text" placeholder="Enter your pincode to check if we deliver in your area" class='transparent' onKeyUp={() => this.deliver()} required />
             </span>
             <span id="status"></span>
         </div>

@@ -23,7 +23,7 @@ export default class Timer extends Component {
                     clearInterval(this.myInterval)
                 } else {
                     minutes--;
-                    seconds=59;
+                    seconds = 59;
                     this.setState(({ minutesn }) => ({
                         minutesn: minutesn - 1,
                         secondsn: 59
