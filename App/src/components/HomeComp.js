@@ -12,7 +12,7 @@ class Home extends Component{
 
     checkStatus(){
         console.log({ifisStatus});
-        if(ifisStatus[0] === "https://shivendrasaurav.github.io/StrawsomeShakes/App/status"){
+        if(ifisStatus[0] === "https://shivendrasaurav.github.io/StrawsomeShakes/App/#/status"){
             return(
                 <span>Time remaining for your order to be delivered
                 <span class="ta_xl"><Timer /></span>
