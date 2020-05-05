@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/StrawsomeShakes/static/css/main.6fab5358.chunk.css",
+    "main.css": "/StrawsomeShakes/static/css/main.4ea895a1.chunk.css",
     "main.js": "/StrawsomeShakes/static/js/main.aa593db5.chunk.js",
     "main.js.map": "/StrawsomeShakes/static/js/main.aa593db5.chunk.js.map",
     "runtime-main.js": "/StrawsomeShakes/static/js/runtime-main.220e0a70.js",
@@ -8,9 +8,9 @@
     "static/js/2.a7e09ec6.chunk.js": "/StrawsomeShakes/static/js/2.a7e09ec6.chunk.js",
     "static/js/2.a7e09ec6.chunk.js.map": "/StrawsomeShakes/static/js/2.a7e09ec6.chunk.js.map",
     "index.html": "/StrawsomeShakes/index.html",
-    "precache-manifest.23450070113a1ca42679bf1f6d9ac021.js": "/StrawsomeShakes/precache-manifest.23450070113a1ca42679bf1f6d9ac021.js",
+    "precache-manifest.eb55debe8e022a075965319d0174955a.js": "/StrawsomeShakes/precache-manifest.eb55debe8e022a075965319d0174955a.js",
     "service-worker.js": "/StrawsomeShakes/service-worker.js",
-    "static/css/main.6fab5358.chunk.css.map": "/StrawsomeShakes/static/css/main.6fab5358.chunk.css.map",
+    "static/css/main.4ea895a1.chunk.css.map": "/StrawsomeShakes/static/css/main.4ea895a1.chunk.css.map",
     "static/js/2.a7e09ec6.chunk.js.LICENSE.txt": "/StrawsomeShakes/static/js/2.a7e09ec6.chunk.js.LICENSE.txt",
     "static/media/cart.gif": "/StrawsomeShakes/static/media/cart.b6cefddf.gif",
     "static/media/fluent-icons.css": "/StrawsomeShakes/static/media/fluent-icons-0bed9767.bad585b6.woff",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.220e0a70.js",
     "static/js/2.a7e09ec6.chunk.js",
-    "static/css/main.6fab5358.chunk.css",
+    "static/css/main.4ea895a1.chunk.css",
     "static/js/main.aa593db5.chunk.js"
   ]
 }
