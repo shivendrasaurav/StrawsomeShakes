@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/StrawsomeShakes/App/static/css/main.f77f189a.chunk.css",
-    "main.js": "/StrawsomeShakes/App/static/js/main.16fe4d9e.chunk.js",
-    "main.js.map": "/StrawsomeShakes/App/static/js/main.16fe4d9e.chunk.js.map",
-    "runtime-main.js": "/StrawsomeShakes/App/static/js/runtime-main.3bfee231.js",
-    "runtime-main.js.map": "/StrawsomeShakes/App/static/js/runtime-main.3bfee231.js.map",
-    "static/js/2.046f5f36.chunk.js": "/StrawsomeShakes/App/static/js/2.046f5f36.chunk.js",
-    "static/js/2.046f5f36.chunk.js.map": "/StrawsomeShakes/App/static/js/2.046f5f36.chunk.js.map",
-    "index.html": "/StrawsomeShakes/App/index.html",
-    "precache-manifest.8b149bbbd29ae57cb9bd8e73f6b36f47.js": "/StrawsomeShakes/App/precache-manifest.8b149bbbd29ae57cb9bd8e73f6b36f47.js",
-    "service-worker.js": "/StrawsomeShakes/App/service-worker.js",
-    "static/css/main.f77f189a.chunk.css.map": "/StrawsomeShakes/App/static/css/main.f77f189a.chunk.css.map",
-    "static/js/2.046f5f36.chunk.js.LICENSE.txt": "/StrawsomeShakes/App/static/js/2.046f5f36.chunk.js.LICENSE.txt",
-    "static/media/cart.gif": "/StrawsomeShakes/App/static/media/cart.b6cefddf.gif",
-    "static/media/fluent-icons.css": "/StrawsomeShakes/App/static/media/fluent-icons-0bed9767.bad585b6.woff",
-    "static/media/gps.gif": "/StrawsomeShakes/App/static/media/gps.ad17c600.gif",
-    "static/media/menu.gif": "/StrawsomeShakes/App/static/media/menu.49a11aa2.gif"
+    "main.css": "/StrawsomeShakes/static/css/main.b7fd31ec.chunk.css",
+    "main.js": "/StrawsomeShakes/static/js/main.e2383150.chunk.js",
+    "main.js.map": "/StrawsomeShakes/static/js/main.e2383150.chunk.js.map",
+    "runtime-main.js": "/StrawsomeShakes/static/js/runtime-main.220e0a70.js",
+    "runtime-main.js.map": "/StrawsomeShakes/static/js/runtime-main.220e0a70.js.map",
+    "static/js/2.046f5f36.chunk.js": "/StrawsomeShakes/static/js/2.046f5f36.chunk.js",
+    "static/js/2.046f5f36.chunk.js.map": "/StrawsomeShakes/static/js/2.046f5f36.chunk.js.map",
+    "index.html": "/StrawsomeShakes/index.html",
+    "precache-manifest.773d7b24ce6542717bb4996bcdc58abb.js": "/StrawsomeShakes/precache-manifest.773d7b24ce6542717bb4996bcdc58abb.js",
+    "service-worker.js": "/StrawsomeShakes/service-worker.js",
+    "static/css/main.b7fd31ec.chunk.css.map": "/StrawsomeShakes/static/css/main.b7fd31ec.chunk.css.map",
+    "static/js/2.046f5f36.chunk.js.LICENSE.txt": "/StrawsomeShakes/static/js/2.046f5f36.chunk.js.LICENSE.txt",
+    "static/media/cart.gif": "/StrawsomeShakes/static/media/cart.b6cefddf.gif",
+    "static/media/fluent-icons.css": "/StrawsomeShakes/static/media/fluent-icons-0bed9767.bad585b6.woff",
+    "static/media/gps.gif": "/StrawsomeShakes/static/media/gps.ad17c600.gif",
+    "static/media/menu.gif": "/StrawsomeShakes/static/media/menu.49a11aa2.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.3bfee231.js",
+    "static/js/runtime-main.220e0a70.js",
     "static/js/2.046f5f36.chunk.js",
-    "static/css/main.f77f189a.chunk.css",
-    "static/js/main.16fe4d9e.chunk.js"
+    "static/css/main.b7fd31ec.chunk.css",
+    "static/js/main.e2383150.chunk.js"
   ]
 }
