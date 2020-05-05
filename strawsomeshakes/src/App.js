@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {Route, HashRouter} from 'react-router-dom'
 import './App.css';
 import Home from './components/HomeComp'
@@ -7,16 +7,19 @@ import Contact from './components/ContactComp'
 import Menu from './components/MenuComp'
 import Order from './components/OrderComp'
 
-function App() {
-  return (
-    <HashRouter>
-      <Route path="/home" component={Home} />
-      <Route path="/faq" component={FAQ} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/menu" component={Menu} />
-      <Route path="/status" component={Order} />
-    </HashRouter>
-  );
+class App extends Component{
+
+  render(){
+    return (
+      <HashRouter>
+        <Route path="/home" component={Home} />
+        <Route path="/faq" component={FAQ} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/menu" component={Menu} />
+        <Route path="/status" component={Order} />
+      </HashRouter>
+    );
+  }
 }
 
 export default App;

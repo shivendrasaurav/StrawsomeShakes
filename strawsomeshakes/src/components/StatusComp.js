@@ -1,27 +1,32 @@
 import React, { Component } from 'react'
+import seconds from './timer/seconds'
+import minutes from './timer/minutes'
 
 export default class Timer extends Component {
     state = {
-        minutes: 18,
-        seconds: 0,
+        minutesn: minutes,
+        secondsn: seconds,
     }
 
     componentDidMount() {
         this.myInterval = setInterval(() => {
-            const { seconds, minutes } = this.state
+            const { secondsn, minutesn } = this.state
 
-            if (seconds > 0) {
-                this.setState(({ seconds }) => ({
-                    seconds: seconds - 1
+            if (secondsn > 0) {
+                seconds--;
+                this.setState(({ secondsn }) => ({
+                    secondsn: secondsn - 1,
                 }))
             }
-            if (seconds === 0) {
-                if (minutes === 0) {
+            if (secondsn === 0) {
+                if (minutesn === 0) {
                     clearInterval(this.myInterval)
                 } else {
-                    this.setState(({ minutes }) => ({
-                        minutes: minutes - 1,
-                        seconds: 59
+                    minutes--;
+                    seconds=59;
+                    this.setState(({ minutesn }) => ({
+                        minutesn: minutesn - 1,
+                        secondsn: 59
                     }))
                 }
             } 
@@ -33,12 +38,12 @@ export default class Timer extends Component {
     }
 
     render() {
-        const { minutes, seconds } = this.state
+        const { minutesn, secondsn } = this.state
         return (
             <div>
-                { minutes === 0 && seconds === 0
+                { minutesn === 0 && secondsn === 0
                     ? <h1>Busted!</h1>
-                    : <span>{minutes}:{seconds < 10 ? `0${seconds}` : seconds}</span>
+                    : <span>{minutesn}:{secondsn < 10 ? `0${secondsn}` : secondsn}</span>
                 }
             </div>
         )

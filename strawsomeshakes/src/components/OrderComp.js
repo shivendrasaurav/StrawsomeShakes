@@ -2,11 +2,15 @@ import React, {Component} from 'react';
 import '../App.css';
 import Topnav from './TopnavComp'
 import Footer from './FooterComp'
-import cartItems from './cart/CartItems'
 import Timer from './StatusComp'
 import { NavLink } from 'react-router-dom';
+import ifisStatus from './cart/lastrouteComp'
 
 class Order extends Component{
+
+    setlastRoute(){
+        ifisStatus.push("http://localhost:3000/#/status");
+    }
 
     render(){
         return(
@@ -26,7 +30,9 @@ class Order extends Component{
 
 
                     </div>
+                    <h1>{this.setlastRoute()}</h1>
                     <NavLink to="/home" class="button right">Goto Home</NavLink>
+
 
                 </div>
 

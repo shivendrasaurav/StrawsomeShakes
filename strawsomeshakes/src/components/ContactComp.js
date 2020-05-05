@@ -2,8 +2,21 @@ import React, {Component} from 'react';
 import '../App.css';
 import Topnav from './TopnavComp'
 import Footer from './FooterComp'
+import ifisStatus from './cart/lastrouteComp'
+import Timer from './StatusComp'
 
 class Contact extends Component{
+    
+    checkStatus(){
+        console.log({ifisStatus});
+        if(ifisStatus[0] === "http://localhost:3000/#/status"){
+            return(
+                <span>Time remaining for your order to be delivered
+                <span class="ta_xl"><Timer /></span>
+                </span>
+            );
+        }
+    }
     render(){
         return(
             <div>
@@ -26,6 +39,9 @@ class Contact extends Component{
                             </button>
                             <br /><br />
                         </form>
+                    </div>
+                    <div class="primary_green floatright">
+                            <span class="ta_center">{this.checkStatus()}</span>
                     </div>
                 </div>
                 

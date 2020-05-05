@@ -5,12 +5,14 @@ import Header from './HeaderComp'
 import HowItWorks from './HowitworksComp'
 import Footer from './FooterComp'
 import Timer from './StatusComp'
+import ifisStatus from './cart/lastrouteComp';
 
 
 class Home extends Component{
 
     checkStatus(){
-        if(document.referrer === "http://localhost:3000/"){
+        console.log({ifisStatus});
+        if(ifisStatus[0] === "http://localhost:3000/#/status"){
             return(
                 <span>Time remaining for your order to be delivered
                 <span class="ta_xl"><Timer /></span>
@@ -18,16 +20,19 @@ class Home extends Component{
             );
         }
     }
-
+  
+  
     render(){
         return(
             <div>
                 <Topnav />
-                <Header />
-                <HowItWorks />
+                <Header />        
+        
                 <div class="primary_green floatright">
                     <span class="ta_center">{this.checkStatus()}</span>
                 </div>
+
+                <HowItWorks />
                 <Footer />
             </div>
         );

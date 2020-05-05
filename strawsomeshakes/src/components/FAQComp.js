@@ -2,8 +2,22 @@ import React, {Component} from 'react';
 import '../App.css';
 import Topnav from './TopnavComp'
 import Footer from './FooterComp'
+import ifisStatus from './cart/lastrouteComp'
+import Timer from './StatusComp'
 
 class FAQ extends Component{
+
+    checkStatus(){
+        console.log({ifisStatus});
+        if(ifisStatus[0] === "http://localhost:3000/#/status"){
+            return(
+                <span>Time remaining for your order to be delivered
+                <span class="ta_xl"><Timer /></span>
+                </span>
+            );
+        }
+    }
+
     render(){
         return(
             <div>
@@ -32,6 +46,10 @@ class FAQ extends Component{
                             <div class="ques">How much time does it take for an average delivery?</div>
                             Delivery time depends on many factors including type of order, quantity, if streets are free or not. But even including all the worst cases possible, we have an average delivery time of <strong>26 minutes</strong> from preparing your food to delivering it to your doorsteps.<br /><br />
                         </p>
+        
+                        <div class="primary_green floatright">
+                            <span class="ta_center">{this.checkStatus()}</span>
+                        </div>
 
                     </div>
                 </div>
